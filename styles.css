@@ -38,7 +38,7 @@ body{
 }
 #cat{
     position: absolute;
-    left: 35%;
+    left: 45%;
 }
 .xyr_in{
     width: 600px;
@@ -173,10 +173,17 @@ input[type="radio"]{
     border: solid 1px white;
     border-collapse: collapse;
 }
-.result_head{
+.result_head, .result_php{
     background-color: yellow;
     text-align: center;
 }
+.result_php td{
+    border: solid 1px white;
+    border-collapse: collapse;
+}
 .send_clear:hover{
     color: white;
+}
+#point{
+    transition: all 1s;
 }
