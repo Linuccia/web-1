@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная 1</title>
+    <link rel="icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/orthodox-cross-742265.png"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+<header class="hat">
+    Вариант 2723<br>Курашов Олег, Стефанская Полина<br>Группа P3231
+</header>
+<div class="base">
+    <p><img src="cattt.gif" id="cat" alt="cat"></p>
+    <form class="xyr_in" id="form">
+        <div class="text">
+            <label>
+                <strong>Enter X:</strong>
+                <span class="exception"></span>
+                <input type="text" id="xInput" class="x_in" placeholder="Введите X">
+            </label>
+        </div>
+        <div class="select">
+            <strong>
+                Select Y:
+            </strong>
+            <label>
+                <select class="y_in">
+                    <option value="-4">-4</option>
+                    <option value="-3">-3</option>
+                    <option value="-2">-2</option>
+                    <option value="-1">-1</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </label>
+        </div>
+        <div class="r_in">
+            <strong>Choose R:</strong>
+            <label>
+                    <span class="radio_r"><input type="radio" value="1" checked> 1
+                    <input name="r" type="radio" value="2"> 2
+                    <input name="r" type="radio" value="3"> 3
+                    <input name="r" type="radio" value="4"> 4
+                    <input name="r" type="radio" value="5"> 5</span>
+            </label>
+        </div>
+        <div class="send_clear_but">
+            <button type="submit" id="send"><span class="send_clear">Отправить</span></button>
+            <button type="button" id="clear"><span class="send_clear">Очистить</span></button>
+        </div>
+    </form>
+    <div class="svg">
+        <svg width="400" height="400" class="graph">
+            <line class="axes" x1="0" x2="400" y1="200" y2="200" stroke="black"></line>
+            <line x1="200" x2="200" y1="0" y2="400" stroke="black"></line>
+            <polygon points="200,0 194,25 206,25" stroke="black"></polygon>
+            <polygon points="400,200 375,206 375,194" stroke="black"></polygon>
+
+            <line x1="260" x2="260" y1="205" y2="195" stroke="black"></line>
+            <line x1="330" x2="330" y1="205" y2="195" stroke="black"></line>
+
+            <line x1="70"  x2="70"  y1="205" y2="195" stroke="black"></line>
+            <line x1="140" x2="140" y1="205" y2="195" stroke="black"></line>
+
+            <line x1="195" x2="205" y1="140" y2="140" stroke="black"></line>
+            <line x1="195" x2="205" y1="70"  y2="70"  stroke="black"></line>
+
+            <line x1="195" x2="205" y1="260" y2="260" stroke="black"></line>
+            <line x1="195" x2="205" y1="330" y2="330" stroke="black"></line>
+
+            <text x="250" y="190">R/2</text>
+            <text x="325" y="190">R</text>
+
+            <text x="60" y="190">-R</text>
+            <text x="125" y="190">-R/2</text>
+
+            <text x="210" y="145">R/2</text>
+            <text x="210" y="75">R</text>
+
+            <text x="210" y="265">-R/2</text>
+            <text x="210" y="335">-R</text>
+
+            <polygon points="140,200 140,70 200,70, 200,200"
+                     fill="purple" fill-opacity="0.3" stroke="purple"></polygon>
+
+            <path d="M 260 200 A 70 70, 0, 0, 1, 200 260 L 200 200 Z"
+                  fill="purple" fill-opacity="0.3" stroke="purple"></path>
+
+            <polygon points="140,200 200,200 200,330"
+                     fill="purple" fill-opacity="0.3" stroke="purple"></polygon>
+
+            <circle r="3" cx="200" cy="200" id="point" fill="black" ></circle>
+        </svg>
+    </div>
+    <td valign="top">
+        <table class="result" cellspacing="0">
+            <tr class="result_head">
+                <th>X</th>
+                <th>Y</th>
+                <th>R</th>
+                <th>RESULT</th>
+                <th>TIME</th>
+                <th>BENCHMARK</th>
+            </tr>
+        </table>
+    </td>
+</div>
+</body>
+</html>
